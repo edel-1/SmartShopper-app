@@ -1,3 +1,5 @@
 #MERN ecomerce app
 create front-end/react app
-create back-end
+create products array
+render products
+style produts
