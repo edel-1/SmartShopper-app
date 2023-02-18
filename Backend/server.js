@@ -9,7 +9,7 @@ import orderRouter from './routes/orderRoutes.js';
 import uploadRouter from './routes/uploadRoutes.js';
 
 dotenv.config();
-mongoose.set('strictQuery', true);
+mongoose.set('strictQuery', false);
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
