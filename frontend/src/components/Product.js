@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';

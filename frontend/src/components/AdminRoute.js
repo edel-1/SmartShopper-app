@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useContext } from 'react';
 import { Navigate } from 'react-router-dom';
 import { Store } from '../Store';

@@ -1,3 +1,4 @@
+/* eslint-disable no-empty */
 import React, { useContext, useEffect, useReducer } from 'react';
 import axios from 'axios';
 import { Link, useLocation, useNavigate } from 'react-router-dom';

@@ -1,0 +1,21 @@
+{
+  "name": "smartshopper-app",
+  "version": "1.0.0",
+  "description": "create front-end/react app create products array render products style produts add routing npm i react-router-dom //https://www.npmjs.com/package/react-router-dom create route for home screen create router for product screen",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm install && cd ../frontend && npm install && npmrun build",
+    "start": "node Backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edel-1/SmartShopper-app.git"
+  },
+  "author": "Edlawit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edel-1/SmartShopper-app/issues"
+  },
+  "homepage": "https://github.com/edel-1/SmartShopper-app#readme"
+}
