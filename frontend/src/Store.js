@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-case-declarations */
 import { createContext, useReducer } from 'react';
 
 export const Store = createContext();
@@ -29,13 +31,10 @@ function reducer(state, action) {
 
     case 'CART_ADD_ITEM':
       // add to cart
-      // eslint-disable-next-line no-case-declarations
       const newItem = action.payload;
-      // eslint-disable-next-line no-case-declarations
       const existItem = state.cart.cartItems.find(
         (item) => item._id === newItem._id
       );
-      // eslint-disable-next-line no-case-declarations
       const cartItems = existItem
         ? state.cart.cartItems.map((item) =>
             item._id === existItem._id ? newItem : item
@@ -98,6 +97,5 @@ function reducer(state, action) {
 export function StoreProvider(props) {
   const [state, dispatch] = useReducer(reducer, initialState);
   const value = { state, dispatch };
-  // eslint-disable-next-line react/prop-types
   return <Store.Provider value={value}>{props.children} </Store.Provider>;
 }

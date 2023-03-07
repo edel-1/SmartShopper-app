@@ -7,9 +7,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { StoreProvider } from './Store';
-//import { disableReactDevTools } from '@fvilers/disable-react-devtools';
-// eslint-disable-next-line no-undef
-//if (process.env.NODE_ENV === 'production') disableReactDevTools();
+
 const root = createRoot(document.getElementById('root'));
 
 root.render(

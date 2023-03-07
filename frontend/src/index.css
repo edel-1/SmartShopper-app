@@ -1,8 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@700&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,13 +9,112 @@ body {
 .site-container {
   min-height: 100vh;
 }
+.nav {
+  background: #d9d9d9;
+}
 main {
   flex: 1;
 }
 .btn-primary,
 .btn-outline-primary {
-  background-color: #f0c040;
-  color: #000000;
+  background: #ff540c;
+  color: #ffffff;
+}
+/* welcome */
+.welcome {
+  margin-top: 140px;
+}
+.welcome h1 {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 84px;
+  line-height: 120%;
+  color: #ff540c;
+  margin-bottom: 40px;
+}
+.welcome h2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+.welcome h3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+.welcome-btn {
+  width: 50%;
+  margin: 0 auto 70px;
+}
+.welcome--link {
+  background: #ff540c;
+  padding: 10px;
+}
+/* at media screen */
+@media screen and (max-width: 768px) {
+  .welcome h1 {
+    font-size: 40px;
+  }
+  .welcome h2 {
+    font-size: 30px;
+  }
+  .welcome h3 {
+    font-size: 20px;
+  }
+  .welcome--link {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .welcome-btn {
+    display: flex;
+    flex-direction: column;
+  }
+  .welcome--link + .welcome--link {
+    margin-top: 10px;
+  }
+}
+/* step 1 */
+.step--image {
+  max-width: 600px;
+  height: 100%;
+}
+.smallCircles {
+  margin: 10px auto 40px;
+  width: 10%;
+}
+.smallCircles span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* background: white; */
+  border: 0.5px solid #ff540c;
+}
+.selected {
+  background-color: #ff540c;
+}
+@media screen and (max-width: 768px) {
+  .step--image {
+    max-width: 500px;
+  }
+  .smallCircles {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .step--image {
+    max-width: 280px;
+  }
+  .smallCircles {
+    width: 25%;
+  }
 }
 .products {
   display: flex;
@@ -45,10 +143,66 @@ main {
 .img-thumbnail {
   height: 80px;
 }
+/* signup */
 .small-container {
-  max-width: 600px;
+  margin-bottom: 20px;
 }
-
+.signUp {
+  border: 1px solid #3d3f3d;
+  flex-basis: 50%;
+  padding: 41px 60px 60px;
+  /*max-width: 600px; */
+}
+.signUp--title {
+  color: #f08000;
+  font-size: 24px;
+}
+.signUp--btn {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.signUp--google {
+  width: 100%;
+  border: 1px solid #6a6868;
+  background-color: transparent;
+  padding: 0.6rem 0;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.border {
+  border-top: 70px solid #6a6868;
+}
+.smart {
+  font-family: "Libre Baskerville", serif;
+  font-size: 96px;
+  margin-top: 200px;
+  line-height: 120%;
+}
+.choice {
+  font-size: 32px;
+}
+.choice span,
+.links {
+  color: #ff540c;
+}
+/* media query for signUp */
+@media screen and (max-width: 1024px) {
+  .smart {
+    font-size: 66px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .small-container > div {
+    flex-direction: column;
+  }
+  .smart {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  .choice {
+    font-size: 18px;
+  }
+}
 .checkout-steps > div {
   border-bottom: 0.2rem solid #a0a0a0;
   color: #a0a0a0;
@@ -125,4 +279,90 @@ main {
 }
 button.thumbnail {
   padding: 0;
+}
+/* footer */
+.footer {
+  background-color: #370401;
+  /* height: 400px; */
+}
+
+.tr {
+  border-right: 1px solid;
+  width: 45%;
+}
+.subscribe {
+  margin-top: 90px;
+  height: 136px;
+}
+.subscribe-form {
+  margin-top: 34px;
+}
+.email-input {
+  max-width: 212px;
+  padding: 2px;
+  /* width: 100%; */
+  height: 26px;
+}
+.btn-subscribe {
+  width: 90px;
+  height: 26px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  /* padding: 6px 10px; */
+  color: #ffffff;
+  border-radius: none;
+}
+.footer-links {
+  width: 55%;
+}
+.cq {
+  padding: 0 20px;
+  width: 70%;
+  border-right: 1px solid;
+}
+.link {
+  margin-bottom: 7px;
+  color: white;
+  text-decoration: none;
+}
+.link img {
+  padding-right: 5px;
+}
+.followUs {
+  justify-self: center;
+}
+@media screen and (max-width: 768px) {
+  .footer-logo {
+    text-align: center;
+  }
+  .footer-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .tr {
+    border-right: none;
+    margin-bottom: 40px;
+  }
+  .subscribe {
+    margin-top: 50px;
+  }
+  .footer-links {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .footer-links {
+    flex-direction: column;
+  }
+  .cq {
+    width: 90%;
+    border-right: none;
+    padding: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .cq {
+    flex-direction: column;
+  }
 }

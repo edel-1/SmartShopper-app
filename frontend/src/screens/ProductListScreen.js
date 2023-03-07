@@ -1,4 +1,3 @@
-/* eslint-disable no-empty */
 import React, { useContext, useEffect, useReducer } from 'react';
 import axios from 'axios';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -86,7 +85,7 @@ export default function ProductListScreen() {
         });
 
         dispatch({ type: 'FETCH_SUCCESS', payload: data });
-      } catch (err) {}
+      } catch (err) {console.log(err)}
     };
 
     if (successDelete) {
