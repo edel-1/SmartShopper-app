@@ -1,6 +1,6 @@
-import React from "react";
-import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 // import Step1Screen from "./Step1Screen";
 
 function Welcome() {
